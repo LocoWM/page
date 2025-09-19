@@ -243,7 +243,7 @@
 </main>
 
 
-<!-- introduction video-->
+<!-- Introduction video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -266,7 +266,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End introduction video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -297,68 +297,38 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Framework image -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!-- 单张框架图容器，设置居中中对齐 -->
+      <div class="framework-container has-text-centered">
+        <!-- 框架图片，添加响应式样式 -->
+        <img 
+          src="static/images/framework.png" 
+          alt="Research framework visualization" 
+          loading="lazy"
+          style="max-width: 100%; height: auto; margin: 0 auto; max-height: 600px; object-fit: contain;"
+        />
+        
+        <!-- 文件介绍部分，位于图片下方 -->
+        <div class="framework-description mt-6">
+          <h2 class="title is-4 has-text-centered mb-3">Framework Documentation</h2>
+          <div class="content has-text-justified max-w-3xl mx-auto">
+            <p>This framework illustrates the core architecture of our research, featuring four main components:</p>
+            <ul class="mt-2">
+              <li>Robotic Trajectory Dataset</li>
+              <li>Motion Compressor</li>
+              <li>Locomotion World Model</li>
+              <li>Deployment</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End framework image -->
 
 
 <!-- Video carousel -->
@@ -393,50 +363,6 @@
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
 
   <footer class="footer">
   <div class="container">
