@@ -303,7 +303,7 @@
     <div class="container">
       <!-- 单张框架图容器，设置居中中对齐 -->
       <div class="framework-container has-text-centered">
-        <!-- 图片上方的加粗标题 -->
+        <!-- 图片上方的标题 -->
         <h2 class="title is-3">Framework</h2>
         <!-- 框架图片，添加响应式样式 -->
         <img 
@@ -319,40 +319,49 @@
 <!-- End framework image -->
 
 
-<!-- Video carousel -->
+<!-- Appendix -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+      <!-- Appendix容器，设置居中中对齐 -->
+      <div class="framework-container has-text-centered">
+        <!-- 图片上方的标题 -->
+        <h2 class="title is-3">Appendix</h2>
+        <!-- 表格容器：响应式布局，两个表格垂直排列 -->
+        <div class="container max-w-4xl">
+          <!-- 第一个表格：States of Expert Trajectories -->
+          <div class="mb-12">
+            <!-- 表格图片：响应式+居中，添加阴影提升质感 -->
+            <div class="has-text-centered">
+              <img 
+                src="static/images/table1.png"
+                alt="Table: States of Expert Trajectories" 
+                loading="lazy"
+                style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+              />
+            </div>
+          </div>
+
+          <!-- 第二个表格：Observation and Action of Locomotion World Model -->
+          <div>
+            <!-- 表格图片：响应式+居中 -->
+            <div class="has-text-centered">
+              <img 
+                src="static/images/table2.png"
+                alt="Table: Observation and Action of Locomotion World Model" 
+                loading="lazy"
+                style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End appendix -->
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
