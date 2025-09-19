@@ -247,14 +247,23 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
+      <!-- 替换为 YouTube 嵌入代码，添加居中样式确保和原设计一致 -->
+      <div style="text-align: center; width: 100%;">
+        <iframe 
+          width="100%"  <!-- 宽度设为100%，适配容器宽度（原视频height=100%，保持响应式） -->
+          height="auto" <!-- 高度自动，避免拉伸变形 -->
+          src="https://youtu.be/r5MVGR5nrDU"  <!-- 替换为你的视频嵌入链接 -->
+          title="LWM: Locomotion World Model for Quadrupedal Robots"  <!-- 替换为实际视频标题（SEO友好） -->
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen  <!-- 允许全屏播放（对应原代码的controls功能） -->
+          autoplay muted loop  <!-- 保留原代码的自动播放、静音、循环逻辑（YouTube嵌入支持这些参数） -->
+        ></iframe>
+      </div>
+
+      <!-- 原视频描述文字保持不变 -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        A brief introduction to LWM, along with the presentation of videos showcasing simulation experiments and physical experiments.
       </h2>
     </div>
   </div>
